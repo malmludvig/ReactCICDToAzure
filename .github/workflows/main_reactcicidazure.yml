@@ -57,6 +57,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'ReactCICIDAzure'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_06FDC17293EA464E8EBCA1A2A1A85A5F }}
-          package: .
+          package: ./dist/cicd-testapp
